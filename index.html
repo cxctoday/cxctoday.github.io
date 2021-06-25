@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <link rel="icon" type="image/png" href="./image/appicon_o.png" />
+    <title>CXC</title>
+    <script>
+      ;(function (d) {
+        var config = {
+            kitId: "vcb2xfr",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a
+        h.className += " wf-loading"
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js"
+        tk.async = true
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState
+          if (f || (a && a != "complete" && a != "loaded")) return
+          f = true
+          clearTimeout(t)
+          try {
+            Typekit.load(config)
+          } catch (e) {}
+        }
+        s.parentNode.insertBefore(tk, s)
+      })(document)
+    </script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="cxc_landing">
+      <div class="header">
+        <a href="#" class="logo">
+          <i class="icon icon_logo">
+            <img src="./image/logo_cxc.svg" alt="" />
+          </i>
+        </a>
+      </div>
+      <div class="main">
+        <div class="section section1">
+          <div class="image_box">
+            <div class="image image_kanban_girl_1"></div>
+          </div>
+          <div class="text_box">
+            <div class="title">
+              <div class="text">什麼是</div>
+              <div class="title_image"></div>
+            </div>
+            <div class="dec">
+              <div class="text">直接在線上建⽴您的專屬個⼈創作展售攤位，</div>
+              <div class="text">並可透過多元收費形式，營造出屬於⾃⾝⾵格</div>
+              <div class="text">社區，提⾼作品價值及深化讀者互動。CXC讓</div>
+              <div class="text">創作成為⼀個兼顧有趣、穩定及彈性的個⼈事</div>
+              <div class="text">業。</div>
+            </div>
+          </div>
+        </div>
+        <div class="section section2">
+          <div class="text_box tex_box1">
+            <div class="title">掌握</div>
+            <div class="sub_title">作品所有權利</div>
+            <div class="dec">
+              您可不受拘束讓腦創意奔馳，並握有作品完整權利，無須迎合世俗⽼掉，讓作品發展掌握在⾃⼰⾝上。
+            </div>
+          </div>
+          <div class="text_box tex_box2">
+            <div class="title">建立</div>
+            <div class="sub_title">穩定的收⼊來源</div>
+            <div class="dec">
+              單篇購買、訂閱專區、⾃由 <br />
+              贊助等多元組合模式，彰顯 <br />
+              出各種內容的獨有價值。
+            </div>
+          </div>
+          <div class="text_box tex_box3">
+            <div class="title">適合</div>
+            <div class="sub_title">各類圖像創作者</div>
+            <div class="dec">
+              初期我們以圖像內容創作者為主要服務對象，CXC提供良好視覺動線及⾼解析閱讀器，即便是⼤量漫畫作品也能輕鬆上架。
+            </div>
+          </div>
+          <div class="image_box">
+            <div class="image image_ribbons"></div>
+            <div class="image image_kanban_girl_2"></div>
+            <div class="image image_star"></div>
+          </div>
+        </div>
+        <div class="section section3">
+          <div class="text_box">
+            <div class="title">平台收費</div>
+            <div class="sub_title">⽅式</div>
+            <div class="dec">
+              即⽇起⾄2022年12⽉31⽇，免除攤位設定費，再享交易⼿續費10%折扣優惠！
+              <div class="note">（平台交易⼿續費為2.2% - 25%）</div>
+            </div>
+          </div>
+          <div class="image_box">
+            <div class="image image_lucky_cat"></div>
+            <div class="image image_coin"></div>
+          </div>
+        </div>
+        <div class="footr_bg">
+          <div class="btn">緊鑼密鼓開發中，敬請期待</div>
+        </div>
+      </div>
+      <div class="footer">
+        <a class="email" href="mailto:info@cxc.today">info@cxc.today</a>
+        <div class="logo_text">
+          <img src="./image/logo_cxc_text.svg" width="282" alt="" />
+        </div>
+        <div class="copyright">Copyright©CXC Factory All Right Reserved.</div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

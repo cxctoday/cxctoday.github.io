@@ -1,0 +1,430 @@
+@import "variable";
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: rgba($color: $BG, $alpha: 1);
+}
+a {
+  text-decoration: none;
+}
+
+#cxc_landing {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: "source-han-sans-traditional", sans-serif;
+  background-color: $white;
+}
+
+.main {
+  background-image: url("../image/BG.png");
+  background-position-x: -318px;
+  width: 1920px;
+  height: 2969px;
+  position: relative;
+  left: 50%;
+  margin-left: -960px;
+  background-color: rgba($color: $BG, $alpha: 1);
+  .footr_bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url("../image/footer_BG.png");
+    background-position: -88px center;
+    width: 1920px;
+    height: 403px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .btn {
+      background-image: url("../image/btn.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 541px;
+      height: 134px;
+      line-height: 122px;
+      font-size: 35px;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 2px;
+      margin-bottom: 68px;
+    }
+  }
+}
+
+.section {
+  z-index: 1;
+  width: 1366px;
+  margin: 0 auto;
+  position: relative;
+  .image_box {
+    height: 100%;
+    position: absolute;
+    .image {
+      position: absolute;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  .text_box {
+    .title {
+      font-family: source-han-serif-tc, serif;
+      font-weight: 900;
+      font-style: normal;
+    }
+    .sub_title {
+      font-family: source-han-serif-tc, serif;
+      font-weight: 900;
+      font-style: normal;
+    }
+    .dec {
+      font-family: "source-han-sans-traditional", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+  }
+  &.section1 {
+    height: 810px;
+    .image_box {
+      width: 800px;
+      border-radius: 100%;
+      right: 21px;
+      overflow: hidden;
+      .image_kanban_girl_1 {
+        top: 10px;
+        background-image: url("../image/CXC-LandingPage-01.png");
+        background-position: center top;
+        background-size: 737px 804px;
+        width: 800px;
+        height: 800px;
+        // animation: kanban_girl_ani_1 1s forwards;
+        // animation-delay: 0.3s;
+        // transform: translateY(80%);
+      }
+    }
+    .text_box {
+      position: absolute;
+      top: 28px;
+      left: 300px;
+      width: 392px;
+      height: 547px;
+      color: $sub_color;
+      .title {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 11px;
+        .text {
+          writing-mode: vertical-lr;
+          width: 100px;
+          text-align: center;
+          font-size: 100px;
+
+          display: inline-block;
+          line-height: 1;
+        }
+        .title_image {
+          margin-left: 8px;
+          display: inline-block;
+          width: 284px;
+          height: 106px;
+          background-color: $sub_color;
+          background-image: url("../image/title_logo.png");
+          background-position: center;
+          background-size: 250px 86px;
+          background-repeat: no-repeat;
+        }
+      }
+      .dec {
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .text {
+          padding: 0 6px;
+          position: relative;
+          &::before {
+            display: block;
+            content: "";
+            position: absolute;
+            width: 387px;
+            max-width: 100%;
+            height: 18px;
+            background-color: $white;
+            left: 0;
+            bottom: 5px;
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
+  &.section2 {
+    height: 1180px;
+    .text_box {
+      position: absolute;
+      background-repeat: no-repeat;
+      .title {
+        position: absolute;
+        font-size: 80px;
+        height: 196px;
+        width: 80px;
+        line-height: 80px;
+        text-align: center;
+        writing-mode: vertical-lr;
+      }
+      .sub_title {
+        position: absolute;
+        line-height: 48px;
+        background-color: $main_color;
+        text-align: center;
+        font-size: 36px;
+      }
+      .dec {
+        position: absolute;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 1px;
+      }
+      &.tex_box1 {
+        top: 8px;
+        left: 263px;
+        width: 420px;
+        height: 309px;
+        background-image: url("../image/bubble_dialog_y.png");
+        background-position: 0px 8px;
+        .title {
+          top: 0;
+          left: 17px;
+        }
+        .sub_title {
+          top: 33px;
+          left: 101px;
+          width: 255px;
+        }
+        .dec {
+          left: 112px;
+          top: 94px;
+          width: 251px;
+        }
+      }
+      &.tex_box2 {
+        top: 199px;
+        left: 717px;
+        width: 391px;
+        height: 300px;
+        background-image: url("../image/bubble_dialog_b.png");
+        background-position: 28px 0px;
+        z-index: 1;
+        .title {
+          top: 6px;
+          left: 0;
+        }
+        .sub_title {
+          top: 39px;
+          left: 84px;
+          width: 282px;
+        }
+        .dec {
+          left: 101px;
+          top: 108px;
+          width: 240px;
+        }
+      }
+      &.tex_box3 {
+        top: 621px;
+        left: 842px;
+        width: 418px;
+        height: 323px;
+        background-image: url("../image/bubble_dialog.png");
+        background-position: 19px 19px;
+        z-index: 1;
+        .title {
+          top: 0;
+          left: 0;
+        }
+        .sub_title {
+          top: 33px;
+          left: 84px;
+          width: 281px;
+        }
+        .dec {
+          left: 100px;
+          top: 98px;
+          width: 255px;
+        }
+      }
+    }
+    .image_box {
+      width: 952.48px;
+      .image_ribbons {
+        left: 93px;
+        top: 374.4px;
+        background-image: url("../image/ribbons.png");
+        width: 952.48px;
+        height: 644.96px;
+        transform: rotate(23deg);
+      }
+      .image_kanban_girl_2 {
+        top: 274px;
+        left: 137px;
+        background-image: url("../image/CXC-LandingPage-04.png");
+        width: 750px;
+        height: 873px;
+      }
+      .image_star {
+        top: 377px;
+        left: 305px;
+        background-image: url("../image/star.png");
+        width: 400px;
+        height: 118px;
+      }
+    }
+  }
+  &.section3 {
+    margin-top: 42px;
+    height: 724px;
+    .text_box {
+      position: absolute;
+      background-repeat: no-repeat;
+      background-image: url("../image/bubble_y.png");
+      top: 1px;
+      left: 276px;
+      width: 476px;
+      height: 365px;
+      .title {
+        position: absolute;
+        top: 40px;
+        left: 52px;
+        font-size: 80px;
+      }
+      .sub_title {
+        left: 52px;
+        top: 157.4px;
+        position: absolute;
+        font-size: 48px;
+        height: 130px;
+        line-height: 67px;
+        text-align: center;
+        writing-mode: vertical-lr;
+        background-color: $sub_color;
+        color: $main_color;
+      }
+      .dec {
+        position: absolute;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 1px;
+        left: 131px;
+        top: 157.4px;
+        width: 258px;
+        .note {
+          color: $note;
+          font-size: 14px;
+        }
+      }
+    }
+    .image_box {
+      right: 38px;
+      .image_lucky_cat {
+        width: 522px;
+        height: 598px;
+        bottom: 0;
+        right: 56px;
+        background-image: url("../image/CXC-LandingPage-03-a.png");
+      }
+      .image_coin {
+        width: 679px;
+        height: 544px;
+        top: 0;
+        right: 0;
+        background-image: url("../image/coin.png");
+      }
+    }
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 5px 13px 10px;
+  position: relative;
+  height: 70px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $white;
+  box-sizing: border-box;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    width: 82px;
+    height: 36px;
+    .icon_logo {
+      svg {
+        .cls-1 {
+          fill: $sub_color;
+        }
+        .cls-2 {
+          fill: $main_color;
+        }
+      }
+    }
+  }
+}
+.footer {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px 10px;
+  margin: 0 auto;
+  font-size: 14px;
+  box-sizing: border-box;
+  position: relative;
+  .email {
+    position: absolute;
+    top: 50%;
+    margin-top: -8.4px;
+    right: 10px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: $sub_color;
+    opacity: 0.5;
+    font-size: 12px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .copyright {
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: $sub_color;
+    opacity: 0.5;
+    font-size: 12px;
+    margin: 10px 0 0;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1201px) {
+}
+@keyframes kanban_girl_ani_1 {
+  0% {
+    transform: translateY(80%);
+  }
+  //   33% {
+  //     transform: translateY(60%);
+  //   }
+  //   66% {
+  //     transform: translateY(60%);
+  //   }
+  100% {
+    transform: translateY(0%);
+  }
+}
